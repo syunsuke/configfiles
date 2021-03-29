@@ -1,13 +1,17 @@
 ! When you change this config file, 
-! you need execute "xrdb -marge ~/.Xresources"
+! you need execute "xrdb -merge ~/.Xresources"
 
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
-URxvt.font: xft:M+ 1mn:regular:size=14
-!URxvt.font: xft:M+ 1c:regular:size=14
-URxvt.letterSpace: 0
-
 URxvt.scrollBar: 0
+
+URxvt.font: xft:Fira Code:regular:size=12
+!URxvt.font: xft:Migu 1M:regular:size=14
+!URxvt.font: xft:M+ 1c:regular:size=14
+
+URxvt.letterSpace: 0
+URxvt.lineSpace: 2
+URxvt.internalBorder: 5
 
 !! Color Scheme and Opacity - gruvbox-dark https://github.com/morhetz/gruvbox
 URxvt.depth:                32

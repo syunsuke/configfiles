@@ -1,0 +1,42 @@
+############################################
+# keymap
+############################################
+#setxkbmap -option "ctrl:swapcaps"
+setxkbmap -option "ctrl:nocaps"
+xmodmap ~/.Xmodmap
+
+
+############################################
+# Wallpaper
+############################################
+nitrogen --restore &
+
+
+############################################
+# Copositor
+############################################
+picom --experimental-backend &
+
+
+############################################
+# polybar
+############################################
+~/.config/polybar/launch.sh --blocks
+
+
+############################################
+# Fun
+############################################
+#aplay Downloads/GLaDOS_00_part1_entry-1.wav &
+oneko &
+
+
+############################################
+# IM setting
+############################################
+export GLFW_IM_MODULE=ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
+ibus-daemon --xim &
